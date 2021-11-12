@@ -1,0 +1,12 @@
+package Hospital;
+
+public class Hospital {
+
+	public static void main(String[] args) {
+		
+		Personal administrativo = new Personal();
+		administrativo.setSueldo(5000); // Cambio el valor del sueldo
+		System.out.println(administrativo); // Aqui actua el toString()
+	}
+
+}

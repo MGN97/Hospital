@@ -1,0 +1,26 @@
+package Hospital;
+
+public class Enfermeros extends Personal {
+	
+	private int matricula;
+
+	public Enfermeros() {
+		
+	}
+
+	public Enfermeros(double sueldo, int edad, String apellido, String nombre, domicilio dom) {
+		super(sueldo, edad, apellido, nombre, dom);
+		matricula = 235282;
+	}
+
+	public int getMatricula() {
+		return matricula;
+	}
+
+	public void setMatricula(int matricula) {
+		this.matricula = matricula;
+	}
+	
+	
+
+}

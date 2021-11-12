@@ -1,0 +1,40 @@
+package Hospital;
+
+public class Personal {
+	
+	private double sueldo = 3000.00;
+	public int edad = 25;
+	public String apellido = "Perez";
+	public String nombre = "José";
+	
+	//Constructor por defecto
+	public Personal() {
+		
+	}
+	
+	// Constructor sobrecargado
+	public Personal(double sueldo, int edad, String apellido, String nombre) {
+		this.sueldo = sueldo;
+		this.edad = edad;
+		this.apellido = apellido;
+		this.nombre = nombre;
+	}
+	
+	
+	// Metodos para obtener o modificar el valor de sueldo
+	public double getSueldo() {
+		return sueldo;
+	}
+	public void setSueldo(double sueldo) {
+		this.sueldo = sueldo;
+	}
+	
+	// Metodo que devuelve la info completa del objeto
+	@Override
+	public String toString() {
+		String mensaje = "El empleado se llama " + nombre + " " + apellido + " con " + edad + " años " 
+				+ " y un salario de " + sueldo;
+		return mensaje;
+	}
+	
+}
